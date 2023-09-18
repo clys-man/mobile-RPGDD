@@ -1,8 +1,8 @@
 package br.unifor.rpgdd.game.race;
 
 public class HalfGiant extends Character {
-    public HalfGiant(int force, int dexterity, int constitution, int intelligence, int wisdom, int charisma) {
-        super("Meio-Gigante", force, dexterity, constitution, intelligence, wisdom, charisma);
+    public HalfGiant(String name, int force, int dexterity, int constitution, int intelligence, int wisdom, int charisma) {
+        super(name, force, dexterity, constitution, intelligence, wisdom, charisma);
     }
 
     @Override
