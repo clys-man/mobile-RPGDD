@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <AutoCompleteTextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:completionHint="Legolas"
+        android:completionThreshold="1"
+        android:hint="Legolas"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Atributos"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Força"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/forceTextNumber"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Destreza"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/dexterityTextNumber"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="64dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Constituição"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/constitutionTextNumber"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Inteligência"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/intelligenceTextNumber"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sabedoria"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/wisdomTextNumber"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Carisma"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/charismaTextNumber"
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:enabled="false"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Raça"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/comboRaces"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:drawSelectorOnTop="true" />
+
+    <ImageView
+        android:id="@+id/imagem"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter" />
+
+    <Button
+        android:id="@+id/generateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gerar" />
+
+</LinearLayout>
